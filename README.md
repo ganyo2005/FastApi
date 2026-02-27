@@ -1,6 +1,8 @@
 # FastAPI Project
 
-A modern, fast, and easy-to-use API server built with **FastAPI** — a high-performance Python framework based on standard Python type hints. :contentReference[oaicite:1]{index=1}
+A modern, fast, and easy-to-use API server built with **FastAPI** — a high-performance Python framework based on standard Python type hints.
+
+---
 
 ## 🚀 Features
 
@@ -15,7 +17,7 @@ A modern, fast, and easy-to-use API server built with **FastAPI** — a high-per
 ## 🛠️ Built With
 
 - **Python 3.x**
-- **:contentReference[oaicite:2]{index=2}** – API framework for creating fast and scalable HTTP services :contentReference[oaicite:3]{index=3}
+- **[FastAPI](https://github.com/fastapi/fastapi)** – API framework for creating fast and scalable HTTP services
 - **Uvicorn** – Lightning-fast ASGI server
 - **Pydantic** – Data validation and settings management
 
@@ -23,7 +25,7 @@ A modern, fast, and easy-to-use API server built with **FastAPI** — a high-per
 
 ## 📁 Project Structure
 
-```bash
+````bash
 📦 .
 ├── alembic/                 # Database migration files
 ├── app/
@@ -35,4 +37,30 @@ A modern, fast, and easy-to-use API server built with **FastAPI** — a high-per
 ├── requirements.txt         # Project dependencies
 ├── alembic.ini              # Alembic config file
 └── README.md
-```
+
+
+
+
+---
+
+## 🧪 Testing the API
+
+You can test the API using:
+
+- Swagger UI → `http://127.0.0.1:8000/docs`
+- ReDoc → `http://127.0.0.1:8000/redoc`
+- Postman
+- curl
+
+---
+
+### 📮 Testing with Postman
+
+1️⃣ Download and install **Postman**
+https://www.postman.com/downloads/
+
+2️⃣ Start your FastAPI server:
+
+```bash
+uvicorn app.main:app --reload
+````
